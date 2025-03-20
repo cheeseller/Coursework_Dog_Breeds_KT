@@ -2,11 +2,13 @@
 README file
   
 # Below is a summary of the key project information
-a.	project scope and the key features to address the requested outcome. The project scope is detailed in the project scope and guidance.doc saved under the 1. Requirements and useful project info folder. 
-b.	the stretched goals that this project is trying to address but details and coding are not complete, as these are very complex goals that go beyond my current programming experience and further reading and support will be required
-c.	approach and logic used for providing the required output
-d. Testing and validation
-e. Project structure
+a. project scope and the key features to address the requested outcome. The project scope is detailed in the project scope and guidance.doc saved under the 1. Requirements and useful project info folder. 
+b. the stretched goals that this project is trying to address but details and coding are not complete, as these are very complex goals that go beyond my current programming experience and further reading and support will be required
+c. Modules to be used
+d. approach and logic used for providing the required output
+e. Testing and validation
+f. Project structure
+
 
 # a.	Project Scope and the key features to address the requested outcome
 
@@ -22,7 +24,14 @@ The DNA Identification Service is designed to process DNA sequences, identify th
 1. **Probabilities**: Compute the probabilities of the query sequence matching different sequences in the database, and calculate p-values to assess the significance of the matches.
 2. **Phylogenetic Tree**: Construct a reconstructed phylogeny based on the sequence alignment results, showing how the sequences are related.
 
-# c.	approach and logic used for providing the required output
+# c. The following modules will be used and need to be installed  via the terminal using the pip install command, copy and paste the following command on terminal:
+pip install biopython pandas matplotlib seaborn networkx numpy openpyxl
+
+Specifically for the sequence allignment we will use SeqIO,  pairwise2 
+
+
+
+# d.	approach and logic used for providing the required output
 
 ## Approach and Logic summary:
 The program will follow these steps to derive the solution:
@@ -35,7 +44,7 @@ The program will follow these steps to derive the solution:
 ## Approach and Logic Details.  Basically, below describe the steps taken for going from A --> B
 The following steps outline the process flow from reading the input files to generating the desired output. These steps are embedded into the code.
 
-### Step 1: Reading and Validating Input Files
+### Step 1: Reading and Validating Input Files (Filename: a_Input_from_files.py)
 Objective: Ensure that the `dog_breeds.fa` (database) and `mystery.fa` (query) files are in the correct format and contain valid data.
 Details:
  - Read the sequences from both input files using `Bio.SeqIO`.
@@ -89,7 +98,7 @@ Details:
   - Test tree construction with known datasets.
   - Validate the accuracy of tree visualization.
 
-# d. Testing and Validation (Specific Tests)**
+# e. Testing and Validation (Specific Tests)**
 
 Here are specific tests for each step of the code:
 
@@ -118,10 +127,10 @@ Here are specific tests for each step of the code:
    - Test tree construction with a set of known sequences.
    - Validate that the tree is correctly visualized and reflects expected relationships.
 
-# e. Project structure
+# f. Project structure
 To accomodate all the above and for ensuring there is clear documentation, easily accessible and cross referenced, the below project structure has been set up (also included in the project structure.doc saved in the project Structure folder):
 
-# Coursework-20250220 (Parent folder)
+# Dog_Breeds_Project (Parent folder)
 
 ## README.md (this file)
 ## 1.	Requirements and useful project info
@@ -135,6 +144,7 @@ To accomodate all the above and for ensuring there is clear documentation, easil
       ** dog_breeds.fa
       ** mystery.fa
 ## 4.	Source code
+      ** Input_from_files
       ** sequence_matcher.py
       ** align_sequences.py
       ** probability_calculator.py
