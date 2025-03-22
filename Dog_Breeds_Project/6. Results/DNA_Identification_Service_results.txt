@@ -1,0 +1,2 @@
+Best Matching Breed: gb|CM023446.1|
+Alignment Score: 500.0

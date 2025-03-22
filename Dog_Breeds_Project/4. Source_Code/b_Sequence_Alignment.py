@@ -44,14 +44,14 @@ def align_sequences(mystery_sequence, dog_breed_sequences):
     iterations = 0 # Debug
     max_iterations = 3 # Debug
     # Trim the mystery sequence to first 500 bp
-    #mystery_sequence = mystery_sequence[:500]
+    mystery_sequence = mystery_sequence[:500]
     for breed_name, breed_sequence in dog_breed_sequences.items():
         if iterations >= max_iterations:
             break
         iterations += 1
         print(f"DEBUG: Alignment count is: {count} for Breed Name: {breed_name}") # Debug
         # Trim breed sequence to first 500 bp
-        #breed_sequence = breed_sequence[:500]
+        breed_sequence = breed_sequence[:500]
         start_time = datetime.now()
         alignments = pairwise2.align.globalxx(mystery_sequence, breed_sequence, one_alignment_only=True) # fastest
         #alignments = pairwise2.align.localxx(mystery_sequence, breed_sequence, one_alignment_only=True) # Second fastest
