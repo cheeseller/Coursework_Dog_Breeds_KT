@@ -1,2 +1,38 @@
-Best Matching Breed: gb|CM023446.1|
-Alignment Score: 500.0
+
+Course Work - Dog Breeds project: DNA Identification Service
+Prepared by: Konstantinos Tyropolis, MSc Bioinformatics (year 1)
+Results File: DNA_Identification_Service_results.txt, saved in the Dog_Breeds_Project/6. Results folder
+Date and time file created: 27-03-2025 16:16
+
+=== Sequences Loaded ===
+Total dog breed sequences loaded: 99 
+Loaded mystery sequences_by_breed: 1
+
+=== Sequence Match Results ===
+Best Breed Match: English Springer Spaniel
+Match Score: 16711.00
+Match Percentage: 99.86%
+
+=== Alignment Results ===
+The alignment results 'breed and score' are:
+boxer: 16695.0, Portuguese Warren dog, small size, smooth hair: 16689.0, Azores Cattle dog: 16693.0, Aidi: 16694.0, Portuguese Sheepdog: 16706.0, Estrela Mountain dog: 16704.0
+Portuguese Warren dog, small size, weired hair: 16709.0, Portuguese Warren dog, medium size, weired hair: 16705.0, Mixed breed: 16685.0, Camp dog: 16688.0, Portuguese Pointing Dog-long hair: 16704.0, Portuguese Pointing Dog: 16704.0
+Algarve Barrocal Dog: 16686.0, Portuguese Water dog: 16704.0, Sloughi: 16693.0, German Shepherd cross: 16690.0, Husky: 16688.0, Gambian local: 16683.0
+Terrier cross: 16700.0, English Pointer: 16702.0, German Shepherd: 16703.0, Dachshund: 16693.0, Canis Panther: 16703.0, Castro Laboreiro Watchdog: 16695.0
+German shepherd: 16704.0, Indian local: 16689.0, Rottweiler cross: 16702.0, Miniature Schnauzer: 16691.0, EpagneulBreton: 16683.0, Great Dane cross: 16701.0
+Staffordshire Bull Terrier: 16701.0, Brazilian Terrier: 16703.0, Mastiff: 16692.0, Black Retriever: 16702.0, Cocker Spaniel: 16699.0, Pit bull: 16699.0
+Irish Soft Coated Wheaten Terrier: 16704.0, Shar Pei: 16689.0, English Springer Spaniel: 16711.0
+
+=== Phylogeny Tree ===
+Image created and saved in the Dog_Breeds_Project/6. Results folder
+
+
+
+
+This output is the result of the functions in the:
+1. a_Input_from_file.py    ---> to read the dog_breeds.fa and mystery.fa files
+2. b_Sequence_Alignment.py ---> for aligning sequences using the pairwise2 function and creating a dictionary with sequences and their corresponding scores
+3. c_Match_Scoring.py      ---> to find the best match, its corresponding score and percentage of match.
+4. d_Phylogeny_tree.py     ---> to build a phylogenetic tree from the dog breed sequences and includes the mystery sequence.
+
+For more details about the project, refer to the README file.
